@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=540></canvas>
+      <canvas id="unity-canvas" width=1000 height=563></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">PonyLines WebGL v 1.45</div>
+        <div id="unity-build-title">PonyLines WebGL 1.46</div>
       </div>
     </div>
     <script>
@@ -56,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/PonyLinesWebGL_v_1_55.loader.js";
+      var loaderUrl = buildUrl + "/PonyLinesWebGL_v_1_56.loader.js";
       var config = {
-        dataUrl: buildUrl + "/PonyLinesWebGL_v_1_55.data",
-        frameworkUrl: buildUrl + "/PonyLinesWebGL_v_1_55.framework.js",
-        codeUrl: buildUrl + "/PonyLinesWebGL_v_1_55.wasm",
+        dataUrl: buildUrl + "/PonyLinesWebGL_v_1_56.data",
+        frameworkUrl: buildUrl + "/PonyLinesWebGL_v_1_56.framework.js",
+        codeUrl: buildUrl + "/PonyLinesWebGL_v_1_56.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "asya-studio",
         productName: "PonyLinesURP2020",
@@ -82,8 +82,8 @@
         config.devicePixelRatio = 1;
         unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
-        canvas.style.width = "960px";
-        canvas.style.height = "540px";
+        canvas.style.width = "1000px";
+        canvas.style.height = "563px";
       }
       loadingBar.style.display = "block";
 
